@@ -20,4 +20,8 @@ func main() {
 	fmt.Println("true || true =", true || true)
 	fmt.Println("true || false =", true || false)
 	fmt.Println(!true)
+	var sum = 32132 * 42452
+	fmt.Println(sum, reflect.TypeOf(sum))
+	var bool = (true && false) || (false && true) || !(false && true)
+	fmt.Println(bool)
 }
