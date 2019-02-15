@@ -15,5 +15,9 @@ func main() {
 	fmt.Println(c, reflect.TypeOf(c))
 	fmt.Println(d, reflect.TypeOf(d))	
 	fmt.Println(e, reflect.TypeOf(e))
-	
+	fmt.Println("true && true =", true && true)
+	fmt.Println("true && false =", true && false)
+	fmt.Println("true || true =", true || true)
+	fmt.Println("true || false =", true || false)
+	fmt.Println(!true)
 }
