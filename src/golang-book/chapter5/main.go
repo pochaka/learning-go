@@ -34,13 +34,13 @@ func main() {
 		} else {
 			fmt.Println("odd,", i)
 		}
-		i += 1
+		i++
 	}
-	divisible_by_three()
-	fizz_buzz()
+	divisibleByThree()
+	fizzBuzz()
 }
 
-func divisible_by_three() {
+func divisibleByThree() {
 	var counter int = 0
 	for i := 1; i <= 100; i++ {
 		if i%3 == 0 {
@@ -51,7 +51,7 @@ func divisible_by_three() {
 	fmt.Println("Total amount of divisible by 3 numbers between 1 and 100 is", counter)
 }
 
-func fizz_buzz() {
+func fizzBuzz() {
 	for i := 1; i <= 100; i++ {
 		if i%3 == 0 && i%5 == 0 {
 			fmt.Println("FizzBuzz", i)

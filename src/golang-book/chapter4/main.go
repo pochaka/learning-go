@@ -8,16 +8,16 @@ func main() {
 	// Variables
 	var x string = "Hello world"
 	fmt.Println(x)
-	
+
 	var y string
 	y = "first"
 	fmt.Println(y)
 	y = "second"
 	fmt.Println(y)
-	
+
 	fmt.Println(x + " first " + y)
 	fmt.Println(x == y)
-	
+
 	z := "Shorter statement"
 	fmt.Println(z)
 
@@ -44,17 +44,17 @@ func main() {
 	example()
 
 	// Temperature
-	fahrenheit_to_celsius()
+	fahrenheitToCelsius()
 
 	// Length
-	feet_to_meter()
+	feetToMeter()
 }
 
-func f(){
+func f() {
 	fmt.Println(cat)
 }
 
-func example(){
+func example() {
 	fmt.Print("Enter a number: ")
 	var input float64
 	fmt.Scanf("%f", &input)
@@ -62,15 +62,15 @@ func example(){
 	fmt.Println(output)
 }
 
-func fahrenheit_to_celsius(){
+func fahrenheitToCelsius() {
 	fmt.Print("Enter temperature in Fahrenheit: ")
 	var fahrenheit float64
 	fmt.Scanf("%f", &fahrenheit)
-	celsius := (fahrenheit - 32) * 5/9
+	celsius := (fahrenheit - 32) * 5 / 9
 	fmt.Println("Temperature in celsius - ", celsius)
 }
 
-func feet_to_meter(){
+func feetToMeter() {
 	fmt.Print("Feet: ")
 	var feet float64
 	fmt.Scanf("%f", &feet)
