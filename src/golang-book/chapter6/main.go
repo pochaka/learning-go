@@ -107,9 +107,10 @@ func smallestNumber() {
 	}
 	fmt.Println(len(x))
 	min := x[0]
-	for i := 0; i < len(x); i++ {
-		if x[i] < min {
-			min = x[i]
+	for _, value := range x {
+		fmt.Println(value, min)
+		if min > value {
+			min = value
 		}
 	}
 	fmt.Println(min)
