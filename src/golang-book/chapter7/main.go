@@ -14,6 +14,8 @@ func main() {
 	fmt.Println(nextEven())
 	fmt.Println(nextEven())
 	fmt.Println(nextEven())
+	defer second()
+	first()
 }
 
 func average(xs []float64) float64 {
@@ -39,4 +41,12 @@ func makeEvenGenerator() func() uint {
 		i += 2
 		return
 	}
+}
+
+func first() {
+	fmt.Println("1st")
+}
+
+func second() {
+	fmt.Println("2nd")
 }
